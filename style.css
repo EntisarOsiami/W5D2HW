@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha|Cabin+Sketch&display=swap');
+/*the theme and colors source is this website: https://bootswatch.com/sketchy/ */
+
+body {
+  font-family: 'Neucha', cursive;
+  font-weight: 700;
+  background-color: #fffaf0;
+  color: #333;
+}
+
+.app-title {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: 2px solid #333;
+  border-radius: 20px;
+  box-shadow: 4px 4px 0 #aaa;
+  background-color: #fff;
+}
+
+.input-group .form-control {
+  border: 2px solid #333;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.input-group .btn-add {
+  background-color: #6c5ce7;
+  color: white;
+  border: 2px solid #333;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid #333 !important;
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  background-color: #fefefe;
+  font-family: 'Neucha', cursive;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);/
+}
+
+.task-text {
+  flex-grow: 1;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.task-complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.action-btns {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.action-btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btns button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.action-btns button:active {
+  transform: scale(0.95);
+  background-color: #f5f5f5;
+}
+
+.btn-complete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.4rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-complete:hover {
+  transform: scale(1.1);
+}
+
+.btn-complete i {
+  color: #777;
+  font-size: 1.5rem;
+}
+
+.btn-complete i.fa-check-square {
+  color: #00b894;
+}
+
+.btn-edit i {
+  color: #e17055;
+}
+
+.btn-delete i {
+  color: #d63031;
+}
+
+.action-btns button i {
+  pointer-events: none;
+}
+
+.empty-state {
+  text-align: center;
+  color: #555;
+  font-family: 'Cabin Sketch', cursive;
+  padding: 2rem;
+}
+
+.auth-card {
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 2px solid #333;
+  border-radius: 20px;
+  box-shadow: 4px 4px 0 #aaa;
+}
+
+.auth-card .card-body {
+  padding: 2rem;
+}
+
+.auth-card h2 {
+  font-family: 'Cabin Sketch', cursive;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.auth-card .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.auth-card .form-control {
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.auth-card .btn {
+  border: 2px solid #333;
+  background-color: #6c5ce7;
+  color: white;
+  border-radius: 15px;
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.auth-card a {
+  color: #6c5ce7;
+  font-weight: bold;
+}
+
+.auth-card a:hover {
+  color: #5348c7;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#userWelcome {
+  font-weight: bold;
+  color: #333;
+}
+
+#logoutBtn {
+  white-space: nowrap;
+  font-weight: bold;
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+
+.btn-update {
+  background-color: #e17055 !important;
+  color: white !important;
+  border: 2px solid #333;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.custom-list.list-group-flush .list-group-item {
+  border: 2px solid #333 !important;
+  border-radius: 12px !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.list-group {
+  padding: 0.5rem;
+}
+
+.list-group-item {
+  border: 2px solid #333 !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.list-group-item:first-child,
+.list-group-item:last-child {
+  border: 2px solid #333 !important;
+  border-radius: 12px !important;
+}
+
+#taskList {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+}
